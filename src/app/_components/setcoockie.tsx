@@ -21,6 +21,7 @@ export const SetCookie: React.FC = async () => {
 
   return (
     <div className="my-8">
+      <h2 className="text-2xl font-bold">Set Cookie</h2>
       <form className="flex flex-col gap-2" action={setCookie}>
         <input className="border-2 border-gray-300 p-2" placeholder="Name" type="text" name="name" />
         <input className="border-2 border-gray-300 p-2" placeholder="Value" type="text" name="value" />
