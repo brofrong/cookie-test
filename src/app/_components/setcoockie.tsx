@@ -7,6 +7,10 @@ async function setCookie(formData: FormData) {
   const cookie = await cookies()
   console.log(cookie.set(formData.get("name") as string, formData.get("value") as string, {
     domain: formData.get("domain") as string ?? undefined,
+    httpOnly: true,
+    secure: true,
+    path: "/",
+    sameSite: "lax",
   }))
 }
 
